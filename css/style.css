@@ -1,0 +1,69 @@
+/* importing fonts from google
+    fonts.google.com
+    fonts name open Sans select light 300 and regular 400 then click Embed and import style format */
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+    /* reset everything */
+    *{
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: #ffffff;
+      color: #333;
+      line-height: 1.6;
+    }
+    ul {
+      /* removing the bullets */
+      list-style: none;
+    }
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+    h1, h2 {
+      font-weight: 300;
+      line-height: 1.2;
+    }
+    p {
+      margin: 10px 0;
+    }
+    img {
+      width: 100%;
+    }
+
+    /* Navbar */
+    /* navar has 2 items in it and we want them to align in a row  */
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #333;
+      color: #ffffff;
+      opacity: 0.8;
+      width: 100%;
+      /* common for height for navbar */
+      height: 70px;
+      /* positioning on top from the 0px */
+      position: fixed;
+      top: 0px;
+      padding: 0 30px;
+    }
+    .navbar a {
+      color: #ffffff;
+      padding: 10px 20px ;
+      margin: 0 5px;
+
+    }
+    .navbar a:hover {
+      border-bottom: #28a745 solid 2px;
+    }
+    .navbar ul{
+      display: flex;
+    }
+    .navbar .logo {
+      /* making the font a little bigger */
+      font-weight: 400;
+    }

@@ -92,7 +92,7 @@ An element with greater stack order is always in front of an element
 
  .flex-items  {
    display: flex;
-   text-align: center;
+   align-items: center;
    justify-content: center;
    text-align: center;
    height: 100%;
@@ -147,4 +147,34 @@ An element with greater stack order is always in front of an element
 }
 .flex-columns p {
   margin: 20px 0;
+}
+/* section header */
+.section-header{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.section-header h2{
+  font-size: 40px;
+  margin: 20px 0;
+}
+.section-padding{
+  /* 20px top 20 L&R 40 bottom */
+  padding: 20px 20px 40px;
+  /* background-color: red; */
+}
+/* Flex grid */
+.flex-grid .row{ 
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+
+} 
+.flex-grid .column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
 }

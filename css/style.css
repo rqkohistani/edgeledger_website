@@ -136,3 +136,6 @@
   font-size: 1rem;
   
 } */
+.cases img:hover{
+  opacity: 0.7;
+}

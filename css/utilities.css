@@ -81,3 +81,17 @@ An element with greater stack order is always in front of an element
    /* z-index: -10; */
    z-index: 10;
  }
+
+ .flex-items  {
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   text-align: center;
+   height: 100%;
+ }
+
+ /* adding some padding to divs inside
+    > this means the direct div child */
+ .flex-items > div {
+   padding: 20px;
+ }

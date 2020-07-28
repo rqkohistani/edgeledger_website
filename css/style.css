@@ -99,3 +99,40 @@
       margin: 20px 0 30px;
     }
     
+  
+     /* Icons */
+.icons {
+  padding: 30px;
+  /* background-color: red; */
+}
+
+.icons h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+  /* the browser is blocking the below code 
+    so i created i1 class to target in different way 
+      but i keep using it even though icons are commented out
+        in my browser i maybe i can fix in the future */
+  .icons i {
+  background-color: #28a745;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 15px;
+ 
+}
+ /*
+.icons .i1 {
+ 
+  display: flex;
+  text-align: center;
+  background-color: #28a745;
+  color: #fff;
+  padding: 1rem;
+  max-width: 70px;
+    border-radius: 50%;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  
+} */

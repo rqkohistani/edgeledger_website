@@ -44,7 +44,7 @@
       color: #ffffff;
       opacity: 0.8;
       width: 100%;
-      /* common for height for navbar */
+      /* common navbar height */
       height: 70px;
       /* positioning on top from the 0px */
       position: fixed;
@@ -66,4 +66,34 @@
     .navbar .logo {
       /* making the font a little bigger */
       font-weight: 400;
+    }
+
+    /* Header */
+    .hero{
+      background: url('../images/home/showcase.jpg')
+      no-repeat center center/cover; 
+      /* The height of hero should be 100vh to cover entire viewport */
+      height: 100vh;
+      position: relative;
+      color: #ffffff;
+    }
+    /* Content 
+      right now the content is behind the navbar we need to position it */
+    .hero .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100%;
+      padding: 0 20px;
+
+    }
+    .hero .content h1 {
+      font-size: 55px;
+    }
+    .hero .content p {
+      font-size: 23px;
+      max-width: 600px;
+      margin: 20px 0 30px;
     }

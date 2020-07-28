@@ -95,5 +95,7 @@
     .hero .content p {
       font-size: 23px;
       max-width: 600px;
+      /* 20px top 0 left & right 30px bottom */
       margin: 20px 0 30px;
     }
+    

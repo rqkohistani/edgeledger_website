@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font-awesome
+      https://cdnjs.com/libraries/font-awesome
+      then click on copy script tag and paste below -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" 
+      integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" 
+      crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/utilities.css">
+  <!-- in case we need to override utility classes we keep it above the style.css so that style.css stick in -->
+  <link rel="stylesheet" href="css/style.css">
+  <title> Read Our Blog </title>
+</head>
+<body id="home">
+  <header class="hero blog">
+    <div id="navbar" class="navbar">
+      <!-- div with id and class navbar have items in it h1 and nav  -->
+      <h1 class="logo">
+        <!-- font-awesome logo
+            i tag is for icon  -->
+       <span class="text-primary"> <i class="fas fa-book-open"></i> Edge</span>Ledger
+      </h1>
+      <nav>
+        <ul>
+          <li>
+            <li>  <a href="index.html">Home</a> </li>
+            <li>  <a href="index.html#about">About</a> </li>
+            <li> <a href="index.html#cases">Cases</a> </li>
+            <li> <a href="index.html#blog">Blog</a> </li>
+            <li> <a href="index.html#contact">Contact</a> </li>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="content">
+      <h1>Blog</h1>
+     
+    </div>
+  </header>
+
+  <!-- main tag  -->
+  <!-- all of our sections aside from the footer go inside this main tag -->
+    <!-- section#about.icons.bg-ligh  -->
+    <main>
+     <!--blog  -->
+     <article class="flex-columns">
+      <div class="row">
+        <div class="column">
+          <div class="column-1">
+              <img src="images/blog/blog1.jpg" alt="">
+          </div>
+        </div>
+        <div class="column">
+          <div class="column-2 bg-ligh">
+            <h2>Blog Post One</h2>
+            <p class="meta">
+              <i class="fas fa-user"></i> Posted by <strong>Rashed Qazizada</strong> | July 30 2020
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit natus iure dolore aperiam quidem repellat iusto rem deleniti, recusandae accusamus totam repudiandae fuga? Magnam non possimus corporis quam reiciendis. Officiis.</p>
+            <a href="post.html" class="btn btn-dark">
+              <i class="fas fa-chevron"></i>
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+     </article>
+     <article class="flex-columns flex-reverse">
+      <div class="row">
+        <div class="column">
+          <div class="column-1">
+              <img src="images/blog/blog2.jpg" alt="">
+          </div>
+        </div>
+        <div class="column">
+          <div class="column-2 bg-dark">
+            <h2>Blog Post Two</h2>
+            <p class="meta">
+              <i class="fas fa-user"></i> Posted by <strong>Adam Rashdan</strong> | July 30 2020
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit natus iure dolore aperiam quidem repellat iusto rem deleniti, recusandae accusamus totam repudiandae fuga? Magnam non possimus corporis quam reiciendis. Officiis.</p>
+            <a href="post.html" class="btn btn-light">
+              <i class="fas fa-chevron"></i>
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+     </article>
+
+     <article class="flex-columns">
+      <div class="row">
+        <div class="column">
+          <div class="column-1">
+              <img src="images/blog/blog3.jpg" alt="">
+          </div>
+        </div>
+        <div class="column">
+          <div class="column-2 bg-light">
+            <h2>Blog Post Three</h2>
+            <p class="meta">
+              <i class="fas fa-user"></i> Posted by <strong>Rashed Qazizada</strong> | July 30 2020
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit natus iure dolore aperiam quidem repellat iusto rem deleniti, recusandae accusamus totam repudiandae fuga? Magnam non possimus corporis quam reiciendis. Officiis.</p>
+            <a href="post.html" class="btn btn-light">
+              <i class="fas fa-chevron"></i>
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+     </article>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer bg-dark">
+    <div class="social">
+      <a href="#"><i class="fab fa-facebook fa-3x"></i></a>
+      <a href="#"><i class="fab fa-twitter fa-3x"></i></a>
+      <a href="#"><i class="fab fa-youtube fa-3x"></i></a>
+      <a href="#"><i class="fab fa-linkedin fa-3x"></i></a>
+    </div>
+   <p>Copyright &copy; 2020 - EdgeLedger</p>
+  </footer>
+</body>
+</html>

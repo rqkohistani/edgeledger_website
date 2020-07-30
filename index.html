@@ -10,6 +10,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
     integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
     crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/lightbox.min.css">
   <link rel="stylesheet" href="css/utilities.css">
   <!-- in case we need to override utility classes we keep it above the style.css so that style.css stick in -->
   <link rel="stylesheet" href="css/style.css">
@@ -129,20 +130,44 @@
       </header>
       <div class="row">
         <div class="column">
-          <img src="images/cases/cases1.jpg" alt="">
-          <img src="images/cases/cases2.jpg" alt="">
+          <a href="images/cases/cases1.jpg" data-lightbox="cases"
+            data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit!">
+            <img src="images/cases/cases1.jpg" alt="">
+          </a>
+          <a href="images/cases/cases2.jpg" data-lightbox="cases"
+            data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit!">
+            <img src="images/cases/cases2.jpg" alt="">
+          </a>
         </div>
         <div class="column">
-          <img src="images/cases/cases3.jpg" alt="">
-          <img src="images/cases/cases4.jpg" alt="">
+          <a href="images/cases/cases3.jpg" data-lightbox="cases"
+            data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit!">
+            <img src="images/cases/cases3.jpg" alt="">
+          </a>
+          <a href="images/cases/cases4.jpg" data-lightbox="cases"
+            data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit!">
+            <img src="images/cases/cases4.jpg" alt="">
+          </a>
         </div>
         <div class="column">
-          <img src="images/cases/cases5.jpg" alt="">
-          <img src="images/cases/cases6.jpg" alt="">
+          <a href="images/cases/cases5.jpg" data-lightbox="cases"
+            data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit!">
+            <img src="images/cases/cases5.jpg" alt="">
+          </a>
+          <a href="images/cases/cases6.jpg" data-lightbox="cases"
+            data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit!">
+            <img src="images/cases/cases6.jpg" alt="">
+          </a>
         </div>
         <div class="column">
-          <img src="images/cases/cases7.jpg" alt="">
-          <img src="images/cases/cases8.jpg" alt="">
+          <a href="images/cases/cases7.jpg" data-lightbox="cases"
+            data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit!">
+            <img src="images/cases/cases7.jpg" alt="">
+          </a>
+          <a href="images/cases/cases8.jpg" data-lightbox="cases"
+            data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit!">
+            <img src="images/cases/cases8.jpg" alt="">
+          </a>
         </div>
       </div>
     </section>
@@ -248,6 +273,11 @@
     </div>
     <p>Copyright &copy; 2020 - EdgeLedger</p>
   </footer>
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+  <script src="js/lightbox.min.js"></script>
   <script>
     // this is just an extra funtionality for the navbar
     const navbar = document.getElementById('navbar');

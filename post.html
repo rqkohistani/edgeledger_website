@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- font-awesome
       https://cdnjs.com/libraries/font-awesome
       then click on copy script tag and paste below -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" 
-      integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" 
-      crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
+    integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/utilities.css">
   <!-- in case we need to override utility classes we keep it above the style.css so that style.css stick in -->
   <link rel="stylesheet" href="css/style.css">
   <title> Post One </title>
 </head>
+
 <body id="home">
   <header class="hero blog">
-    <div id="navbar" class="navbar">
+    <div id="navbar" class="navbar top">
       <!-- div with id and class navbar have items in it h1 and nav  -->
       <h1 class="logo">
         <!-- font-awesome logo
             i tag is for icon  -->
-       <span class="text-primary"> <i class="fas fa-book-open"></i> Edge</span>Ledger
+        <span class="text-primary"> <i class="fas fa-book-open"></i> Edge</span>Ledger
       </h1>
       <nav>
         <ul>
           <li>
-            <li>  <a href="index.html">Home</a> </li>
-            <li>  <a href="index.html#about">About</a> </li>
-            <li> <a href="index.html#cases">Cases</a> </li>
-            <li> <a href="index.html#blog">Blog</a> </li>
-            <li> <a href="index.html#contact">Contact</a> </li>
+          <li> <a href="index.html">Home</a> </li>
+          <li> <a href="index.html#about">About</a> </li>
+          <li> <a href="index.html#cases">Cases</a> </li>
+          <li> <a href="index.html#blog">Blog</a> </li>
+          <li> <a href="index.html#contact">Contact</a> </li>
           </li>
         </ul>
       </nav>
@@ -38,14 +40,14 @@
 
     <div class="content">
       <h1>Blog</h1>
-     
+
     </div>
   </header>
 
   <!-- main tag  -->
   <!-- all of our sections aside from the footer go inside this main tag -->
-    <!-- section#about.icons.bg-ligh  -->
-    <main>
+  <!-- section#about.icons.bg-ligh  -->
+  <main>
     <section class="post">
       <h2>Blog Post One</h2>
       <p class="meta">
@@ -53,8 +55,14 @@
 
       </p>
       <img src="images/home/blog.jpg" alt="">
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit natus iure dolore aperiam quidem repellat iusto rem deleniti, recusandae accusamus totam repudiandae fuga? Magnam non possimus corporis quam reiciendis. Officiis.</p>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis iste perferendis, itaque esse tempore consequuntur id expedita dignissimos sint voluptatum ducimus odit. Quam possimus cumque id sed ab amet et, exercitationem ex adipisci eaque quas soluta laudantium provident libero voluptas placeat reiciendis! Harum sapiente at temporibus cumque cum quas reprehenderit in reiciendis nemo perferendis tempore, amet molestiae illum itaque praesentium.</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit natus iure dolore aperiam quidem repellat iusto
+        rem deleniti, recusandae accusamus totam repudiandae fuga? Magnam non possimus corporis quam reiciendis.
+        Officiis.</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis iste perferendis, itaque esse tempore
+        consequuntur id expedita dignissimos sint voluptatum ducimus odit. Quam possimus cumque id sed ab amet et,
+        exercitationem ex adipisci eaque quas soluta laudantium provident libero voluptas placeat reiciendis! Harum
+        sapiente at temporibus cumque cum quas reprehenderit in reiciendis nemo perferendis tempore, amet molestiae
+        illum itaque praesentium.</p>
     </section>
 
   </main>
@@ -67,7 +75,21 @@
       <a href="#"><i class="fab fa-youtube fa-3x"></i></a>
       <a href="#"><i class="fab fa-linkedin fa-3x"></i></a>
     </div>
-   <p>Copyright &copy; 2020 - EdgeLedger</p>
+    <p>Copyright &copy; 2020 - EdgeLedger</p>
   </footer>
+  <script>
+    // this is just an extra funtionality for the navbar
+    const navbar = document.getElementById('navbar');
+    window.onscroll = function () {
+      // if the scrolled more than 100 px then transparant stick in
+      if (window.pageYOffset > 100) {
+        navbar.classList.remove('top')
+      } else {
+        navbar.classList.add('top')
+      }
+    }
+  </script>
+
 </body>
+
 </html>
